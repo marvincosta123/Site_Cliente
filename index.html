@@ -108,6 +108,44 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 }
 @media (max-width:560px){header.nav .btn{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+
+/* v4: banner sob o menu e sob a faixa, blocos decorativos, hover nos numerais */
+header.nav{background:transparent;border-bottom:1px solid rgba(255,255,255,.22);transition:background .3s,box-shadow .3s}
+header.nav.sc{background:var(--g);border-bottom-color:transparent}
+header.nav .wrap{height:72px;min-height:0}
+.hero{margin-top:-73px}
+.slide{padding:152px 0 172px;background-image:linear-gradient(to bottom,rgba(20,83,45,.6),rgba(20,83,45,0) 170px),linear-gradient(100deg,rgba(20,83,45,.9) 35%,rgba(31,122,77,.3) 100%),var(--img,none)}
+.dots{bottom:98px}
+.strip{position:absolute;left:0;right:0;bottom:0;z-index:3;background:rgba(20,83,45,.7);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-top:1px solid rgba(255,255,255,.2)}
+.hero::before,.hero::after,.alt::before,.alt::after,#diferenciais::before,#diferenciais::after{content:"";position:absolute;top:0;width:132px;pointer-events:none}
+.hero::before,.alt::before,#diferenciais::before{right:132px;height:132px}
+.hero::after,.alt::after,#diferenciais::after{right:0;height:264px}
+.hero::before,.hero::after,#diferenciais::before,#diferenciais::after{background:rgba(255,255,255,.1)}
+.alt::before,.alt::after{background:rgba(31,122,77,.09)}
+.hero::before,.hero::after{z-index:2}
+.alt,#diferenciais{position:relative;overflow:hidden}
+.alt>.wrap,#diferenciais>.wrap{position:relative;z-index:1}
+.alt.bl::before,.alt.bl::after{top:auto;bottom:0;right:auto}
+.alt.bl::before{left:132px}
+.alt.bl::after{left:0}
+#diferenciais{background:var(--gd);color:#fff}
+#diferenciais .why div{border-top-color:var(--mint)}
+#diferenciais .why p{color:rgba(255,255,255,.82)}
+.steps li::before,.why b{display:flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:50%;border:2px solid transparent;transition:background .3s,color .3s,transform .3s,border-color .3s}
+.steps li::before{margin-bottom:10px}
+.steps li:hover::before,.why div:hover b{background:var(--gd);color:#fff;border-color:var(--mint);transform:scale(1.12) rotate(-8deg)}
+#diferenciais .why b{color:var(--mint)}
+#diferenciais .why div:hover b{background:var(--mint);color:var(--gd);border-color:#fff}
+@media (max-width:860px){
+.slide{padding:118px 0 34px}
+.hero::before,.hero::after{display:none}
+.alt::before,.alt::after,#diferenciais::before,#diferenciais::after{width:64px}
+.alt::before,#diferenciais::before{right:64px;height:64px}
+.alt::after,#diferenciais::after{height:128px}
+.alt.bl::before{left:64px;right:auto}
+.strip{position:relative}
+.dots{position:relative;bottom:auto;padding:0 0 16px}
+}
 </style>
 </head>
 <body>
@@ -141,9 +179,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <a class="btn" href="#contato">Abrir minha empresa</a>
   </div></div>
   <div class="dots" id="dots"><button aria-label="Slide 1" class="on"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button></div>
+  <div class="strip"><div class="wrap"><span>Atendimento próximo</span><span>Visão estratégica</span><span>Segurança fiscal</span><span>Foco em resultados</span><span>Gestão organizada</span><span>Transparência</span></div></div>
 </div>
 
-<div class="strip"><div class="wrap"><span>Atendimento próximo</span><span>Visão estratégica</span><span>Segurança fiscal</span><span>Foco em resultados</span><span>Gestão organizada</span><span>Transparência</span></div></div>
 
 <section id="sobre"><div class="wrap about">
   <div>
@@ -192,7 +230,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </div></section>
 
-<section class="alt"><div class="wrap">
+<section class="alt bl"><div class="wrap">
   <div class="head"><p class="kicker">Como funciona</p><h2>Simples do primeiro contato ao resultado</h2></div>
   <ol class="steps">
     <li><h3>Você fala com a gente</h3><p>Conte sua necessidade pelo formulário ou pelo WhatsApp.</p></li>
