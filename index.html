@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contabilidade estratégica, abertura de empresa e regularização de obras</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f2a4a;--navy2:#173b66;--gold:#c9a24a;--bg:#fff;--bg2:#f3f5f8;--ink:#1b2a3a;--muted:#5a6878;--line:#dde3ea;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1624;--bg2:#12233a;--ink:#e8eef6;--muted:#a2b2c4;--line:#243a57;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c1624;--bg2:#12233a;--ink:#e8eef6;--muted:#a2b2c4;--line:#243a57;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Open Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+p{margin:0 0 1em;max-width:64ch}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+section{padding:76px 0}
+.kicker{font:600 .95rem Montserrat,sans-serif;color:var(--gold);margin:0 0 .4em}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:700}
+.btn{display:inline-block;background:var(--gold);color:#1a1405;font:700 1rem Montserrat,sans-serif;padding:14px 28px;border-radius:4px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.btn.line{background:none;color:#fff;border:2px solid #fff}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.bar{background:var(--navy2);color:#fff;font-size:.88rem}
+.bar .wrap{display:flex;justify-content:space-between;gap:12px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+header.nav{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.logo{font:800 1.3rem Montserrat,sans-serif}
+.logo small{display:block;font:500 .7rem "Open Sans",sans-serif;opacity:.8}
+nav{display:flex;gap:22px;font-weight:600;font-size:.95rem}
+nav a{text-decoration:none}
+nav a:hover{color:var(--gold)}
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
+.slide{display:none;padding:96px 0 110px;background-color:var(--navy);background-image:linear-gradient(100deg,rgba(15,42,74,.96) 35%,rgba(15,42,74,.55) 100%),var(--img,none);background-size:cover;background-position:center right}
+.slide.on{display:block}
+.slide h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;max-width:19ch}
+.slide p{font-size:1.15rem;max-width:56ch;opacity:.92}
+.slide .btn{margin-top:14px}
+.dots{position:absolute;left:0;right:0;bottom:22px;display:flex;gap:10px;justify-content:center}
+.dots button{width:34px;height:5px;border:0;border-radius:3px;background:rgba(255,255,255,.35);cursor:pointer;padding:0}
+.dots button.on{background:var(--gold)}
+.strip{background:var(--navy2);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding-top:18px;padding-bottom:18px;font:600 .88rem Montserrat,sans-serif;text-align:center}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
+.badge{background:var(--navy);color:#fff;border-radius:8px;padding:36px;text-align:center}
+.badge b{display:block;font:800 3rem Montserrat,sans-serif;color:var(--gold)}
+.alt{background:var(--bg2)}
+.head{text-align:center;margin-bottom:40px}
+.head p{margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.card .img{height:130px;background:linear-gradient(135deg,var(--navy),var(--navy2));display:flex;align-items:flex-end;padding:16px;color:#fff;font:700 1.1rem Montserrat,sans-serif}
+.card.hl .img{background:linear-gradient(135deg,#8a6a1f,var(--gold));color:#1a1405}
+.card div.body{padding:20px;flex:1;display:flex;flex-direction:column}
+.card p{font-size:.97rem;color:var(--muted)}
+.card a{margin-top:auto;font-weight:700;color:var(--navy2);text-decoration:none}
+:root[data-theme="dark"] .card a{color:var(--gold)}
+@media (prefers-color-scheme:dark){.card a{color:var(--gold)}}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.why div{border-top:3px solid var(--gold);padding-top:14px}
+.why b{font:800 1.5rem Montserrat,sans-serif;color:var(--gold)}
+.why h3{font-size:1.1rem;margin:.2em 0}
+.why p{font-size:.96rem;color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+form{display:grid;gap:14px}
+label{display:grid;gap:6px;font-weight:600;font-size:.95rem}
+input,select{font:inherit;padding:12px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);width:100%}
+footer{background:var(--navy);color:#fff;padding:28px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:#25d366;color:#08331a;font:700 .95rem Montserrat,sans-serif;padding:13px 18px;border-radius:99px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+@media (max-width:860px){nav{display:none}.strip .wrap{grid-template-columns:repeat(2,1fr)}.about,.contact,.cards,.why{grid-template-columns:1fr}section{padding:54px 0}.slide{padding:64px 0 90px}}
+.person img{width:100%;height:auto;border-radius:8px 8px 0 0;display:block}.person .badge{border-radius:0 0 8px 8px;padding:16px;font:600 1rem Montserrat,sans-serif}.person .badge b{display:inline;font-size:1.3rem}
+@media (max-width:860px){.person{max-width:420px}}
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="wrap"><span>Foz do Iguaçu/PR · contato@seudominio.com.br</span><span>Seg a Sex, 08h às 18h</span></div></div>
+
+<header class="nav"><div class="wrap">
+  <div class="logo">Sua Contabilidade<small>Assessoria Empresarial</small></div>
+  <nav><a href="#sobre">Quem somos</a><a href="#servicos">Serviços</a><a href="#diferenciais">Diferenciais</a><a href="#contato">Contato</a></nav>
+  <a class="btn" href="#contato">Fale conosco</a>
+</div></header>
+
+<div class="hero" id="hero">
+  <div class="slide on" style="--img:url(hero-1.jpg)"><div class="wrap">
+    <p class="kicker">Contabilidade geral</p>
+    <h1>Contabilidade estratégica para o crescimento do seu negócio.</h1>
+    <p>Reduza impostos dentro da lei, organize a gestão e tenha segurança fiscal, deixando a burocracia com a gente.</p>
+    <a class="btn" href="#contato">Saiba mais</a>
+  </div></div>
+  <div class="slide" style="--img:url(hero-2.jpg)"><div class="wrap">
+    <p class="kicker">Regularização de obra</p>
+    <h1>Sua obra legalizada, sem burocracia e sem multas.</h1>
+    <p>Regularizamos INSS e CNO de novas construções, reformas e ampliações, em conformidade com os órgãos.</p>
+    <a class="btn" href="#contato">Saiba mais</a>
+  </div></div>
+  <div class="slide" style="--img:url(hero-3.jpg)"><div class="wrap">
+    <p class="kicker">Abertura de empresa</p>
+    <h1>Comece certo: abra seu CNPJ com orientação de quem entende.</h1>
+    <p>Escolhemos o regime tributário ideal e cuidamos de contrato social, alvarás e registros.</p>
+    <a class="btn" href="#contato">Saiba mais</a>
+  </div></div>
+  <div class="dots" id="dots"><button aria-label="Slide 1" class="on"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button></div>
+</div>
+
+<div class="strip"><div class="wrap"><span>Experiência comprovada</span><span>Visão estratégica</span><span>Tecnologia integrada</span><span>Foco em resultados</span><span>Gestão otimizada</span><span>Segurança fiscal</span></div></div>
+
+<section id="sobre"><div class="wrap about">
+  <div>
+    <p class="kicker">Quem somos</p>
+    <h2>Contabilidade que vai além da burocracia</h2>
+    <p>Somos uma assessoria contábil e empresarial com atendimento próximo e linguagem simples. Cuidamos da contabilidade geral da sua empresa e da regularização de obras, com foco em segurança, economia e tranquilidade para você.</p>
+    <p>Atendimento especializado para salões de beleza e clínicas médicas.</p>
+    <a class="btn" href="#contato">Falar com um especialista</a>
+  </div>
+  <div class="person"><img src="foto.jpg" width="600" height="600" alt="Contador responsável" loading="lazy"><div class="badge">Atuando desde <b>[ANO]</b></div></div>
+</div></section>
+
+<section class="alt" id="servicos"><div class="wrap">
+  <div class="head"><p class="kicker">Serviços</p><h2>Como podemos te ajudar?</h2><p>Soluções para cada etapa da sua empresa ou da sua obra.</p></div>
+  <div class="cards">
+    <div class="card hl"><div class="img">Abertura de empresa</div><div class="body"><p>Regime tributário, contrato social, CNPJ, alvarás e inscrições.</p><a href="#contato">Quero abrir minha empresa</a></div></div>
+    <div class="card hl"><div class="img">Regularização de obra (INSS/CNO)</div><div class="body"><p>Matrícula CNO, cálculo e documentação para regularizar a obra.</p><a href="#contato">Quero regularizar minha obra</a></div></div>
+    <div class="card"><div class="img">Contabilidade geral</div><div class="body"><p>Escrituração, balanços, obrigações mensais e apuração de impostos.</p><a href="#contato">Saiba mais</a></div></div>
+    <div class="card hl"><div class="img">Salões de beleza</div><div class="body"><p>Atendimento especializado, com contratação e tributação do jeito certo.</p><a href="#contato">Saiba mais</a></div></div>
+    <div class="card hl"><div class="img">Clínicas médicas</div><div class="body"><p>Planejamento tributário e organização fiscal para clínicas e consultórios.</p><a href="#contato">Saiba mais</a></div></div>
+    <div class="card"><div class="img">Departamento pessoal</div><div class="body"><p>Admissões, folha, férias, encargos e eSocial.</p><a href="#contato">Saiba mais</a></div></div>
+  </div>
+  <p style="text-align:center;margin:32px auto 0">Precisando de algum desses serviços? <a href="https://wa.me/5545999999999" style="font-weight:700">Fale com nossos especialistas</a></p>
+</div></section>
+
+<section id="diferenciais"><div class="wrap">
+  <div class="head"><h2>Por que somos diferentes?</h2></div>
+  <div class="why">
+    <div><b>01</b><h3>Experiência real</h3><p>Conhecemos o cenário local e as necessidades das empresas da região.</p></div>
+    <div><b>02</b><h3>Atendimento personalizado</h3><p>Orientação estratégica e análise do seu negócio, não só números.</p></div>
+    <div><b>03</b><h3>Tudo em um só lugar</h3><p>Do societário ao fiscal, do pessoal à regularização de obras.</p></div>
+    <div><b>04</b><h3>Conformidade em primeiro lugar</h3><p>Acompanhamos prazos e mudanças na lei para evitar multas e riscos.</p></div>
+    <div><b>05</b><h3>Transparência</h3><p>Comunicação contínua e informações claras e organizadas.</p></div>
+    <div><b>06</b><h3>Equipe atualizada</h3><p>Profissionais capacitados e comprometidos com o seu resultado.</p></div>
+  </div>
+</div></section>
+
+<section class="alt" id="contato"><div class="wrap contact">
+  <div>
+    <p class="kicker">Contato</p>
+    <h2>Peça seu atendimento</h2>
+    <p>Preencha o formulário e abriremos uma conversa no WhatsApp com a sua mensagem pronta.</p>
+    <p><b>WhatsApp:</b> (45) 99999-9999<br><b>E-mail:</b> contato@seudominio.com.br<br><b>Endereço:</b> Rua Exemplo, 000, Centro, Foz do Iguaçu/PR<br><b>Horário:</b> Seg a Sex, 08h às 18h</p>
+  </div>
+  <form id="f">
+    <label>Nome<input name="nome" required autocomplete="name"></label>
+    <label>Telefone<input name="tel" type="tel" required autocomplete="tel"></label>
+    <label>Assunto<select name="assunto"><option>Abertura de empresa</option><option>Regularização de obra (INSS)</option><option>Contabilidade geral</option><option>Salão de beleza</option><option>Clínica médica</option></select></label>
+    <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+  </form>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Sua Contabilidade · CRC 00000/PR</span><span>Todos os direitos reservados</span></div></footer>
+<a class="fab" href="https://wa.me/5545999999999">WhatsApp</a>
+
+<script>
+var WHATS="5545999999999";
+var s=document.querySelectorAll(".slide"),d=document.querySelectorAll("#dots button"),i=0,t;
+function go(n){s[i].classList.remove("on");d[i].classList.remove("on");i=n;s[i].classList.add("on");d[i].classList.add("on")}
+function play(){if(!matchMedia("(prefers-reduced-motion:reduce)").matches)t=setInterval(function(){go((i+1)%s.length)},6000)}
+d.forEach(function(b,n){b.onclick=function(){clearInterval(t);go(n)}});play();
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();var x=new FormData(e.target);
+window.open("https://wa.me/"+WHATS+"?text="+encodeURIComponent("Olá! Meu nome é "+x.get("nome")+". Quero falar sobre: "+x.get("assunto")+". Telefone: "+x.get("tel")+"."),"_blank")});
+</script>
+</body>
+</html>
