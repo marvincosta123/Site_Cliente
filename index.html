@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contabilidade, abertura de empresa e regularização de obra</title>
+<title>Guilherme Fonseca Contador | Contabilidade digital, abertura de empresa e obras</title>
 <meta name="description" content="Contabilidade digital com atendimento online em todo o Brasil: contabilidade geral, abertura de empresa e regularização de obra (INSS/CNO). Atendimento especializado para salões de beleza e clínicas médicas.">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#2f8a5e">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="icone.svg">
+<link rel="apple-touch-icon" href="icone-512.png">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--g:#2f8a5e;--gd:#1f6b46;--mint:#9be7bd;--bg:#fff;--bg2:#eef7f0;--ink:#1c2b23;--muted:#52645a;--line:#d5e3da;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -177,6 +178,13 @@ header.nav .wrap{height:72px;min-height:0}
 .card .img{height:150px}
 .fab{padding:11px 16px;font-size:.9rem}
 }
+
+/* v7: logotipo */
+.logo{display:block;line-height:0}
+.logo img{display:block;height:46px;width:auto}
+footer .wrap{align-items:center}
+.flogo{height:42px;width:auto}
+@media (max-width:860px){.logo img{height:40px}}
 </style>
 </head>
 <body>
@@ -184,7 +192,7 @@ header.nav .wrap{height:72px;min-height:0}
 <div class="bar"><div class="wrap"><span>Contabilidade digital · Atendimento em todo o Brasil · contabilidadecontatofoz2026@gmail.com</span><span>Seg a Sex, 08h às 18h</span></div></div>
 
 <header class="nav"><div class="wrap">
-  <div class="logo">Sua Contabilidade<small>Assessoria Empresarial</small></div>
+  <a class="logo" href="#" aria-label="Guilherme Fonseca Contador – início"><img src="logo-branco.svg" alt="Guilherme Fonseca Contador" width="250" height="100"></a>
   <nav id="menu"><a href="#sobre">Quem somos</a><a href="#servicos">Serviços</a><a href="#segmentos">Especialidades</a><a href="#faq">Dúvidas</a><a href="#contato">Contato</a></nav>
   <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">Menu</button>
   <a class="btn" href="#contato">Fale conosco</a>
@@ -222,7 +230,7 @@ header.nav .wrap{height:72px;min-height:0}
     <p>Também temos atendimento especializado para salões de beleza e clínicas médicas.</p>
     <a class="btn" href="#contato">Falar com um especialista</a>
   </div>
-  <div class="person"><img src="foto.jpg" width="600" height="600" alt="Contador responsável" loading="lazy"><div class="badge">Atuando desde <b>[ANO]</b></div></div>
+  <div class="person"><img src="foto.jpg" width="600" height="600" alt="Guilherme Fonseca, contador responsável" loading="lazy"><div class="badge">Atuando desde <b>[ANO]</b></div></div>
 </div></section>
 
 <section id="brasil"><div class="wrap">
@@ -308,7 +316,7 @@ header.nav .wrap{height:72px;min-height:0}
     <p class="kicker">Contato</p>
     <h2>Peça seu atendimento</h2>
     <p>Preencha o formulário e abriremos uma conversa no WhatsApp com a sua mensagem pronta.</p>
-    <p><b>WhatsApp:</b> (45) 9908-9341<br><b>E-mail:</b> <a href="mailto:contabilidadecontatofoz2026@gmail.com">contabilidadecontatofoz2026@gmail.com</a><br><b>Atendimento:</b> 100% online, em todo o Brasil<br><b>Horário:</b> Seg a Sex, 08h às 18h</p>
+    <p><b>WhatsApp:</b> (45) 99999-9999<br><b>E-mail:</b> <a href="mailto:contabilidadecontatofoz2026@gmail.com">contabilidadecontatofoz2026@gmail.com</a><br><b>Atendimento:</b> 100% online, em todo o Brasil<br><b>Horário:</b> Seg a Sex, 08h às 18h</p>
   </div>
   <form id="f">
     <label>Nome<input name="nome" required autocomplete="name"></label>
@@ -319,11 +327,11 @@ header.nav .wrap{height:72px;min-height:0}
   </form>
 </div></section>
 
-<footer><div class="wrap"><span>© 2026 Sua Contabilidade · Contabilidade digital · CRC 00000/UF</span><span>Todos os direitos reservados</span></div></footer>
+<footer><div class="wrap"><img class="flogo" src="logo-branco.svg" alt="Guilherme Fonseca Contador" width="250" height="100" loading="lazy"><span>© 2026 Guilherme Fonseca Contador · CRC 00000/UF</span><span>Todos os direitos reservados</span></div></footer>
 <a class="fab wa" href="#contato" data-t="Olá! Gostaria de mais informações.">WhatsApp</a>
 
 <script>
-var WHATS="554599089341";
+var WHATS="5545999999999";
 function wa(t){return "https://wa.me/"+WHATS+"?text="+encodeURIComponent(t)}
 document.querySelectorAll("a.wa").forEach(function(a){a.href=wa(a.dataset.t);a.target="_blank";a.rel="noopener"});
 var s=document.querySelectorAll(".slide"),d=document.querySelectorAll("#dots button"),i=0,t;
