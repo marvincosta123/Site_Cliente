@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Contabilidade, abertura de empresa e regularização de obra</title>
-<meta name="description" content="Contabilidade geral, abertura de empresa e regularização de obra (INSS/CNO). Atendimento especializado para salões de beleza e clínicas médicas.">
+<meta name="description" content="Contabilidade digital com atendimento online em todo o Brasil: contabilidade geral, abertura de empresa e regularização de obra (INSS/CNO). Atendimento especializado para salões de beleza e clínicas médicas.">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#2f8a5e">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
@@ -146,11 +146,29 @@ header.nav .wrap{height:72px;min-height:0}
 .strip{position:relative}
 .dots{position:relative;bottom:auto;padding:0 0 16px}
 }
+
+/* v5: seção Brasil todo */
+#brasil{position:relative;overflow:hidden;background:var(--gd);color:#fff;text-align:center}
+#brasil::before,#brasil::after{content:"";position:absolute;bottom:0;width:132px;background:rgba(255,255,255,.1);pointer-events:none}
+#brasil::before{left:132px;height:132px}
+#brasil::after{left:0;height:264px}
+#brasil>.wrap{position:relative;z-index:1}
+#brasil .kicker{color:var(--mint)}
+#brasil h2{max-width:22ch;margin-left:auto;margin-right:auto}
+#brasil p{margin-left:auto;margin-right:auto;opacity:.92}
+#brasil .pin{display:block;margin:0 auto 18px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:26px 0 30px}
+.chips span{border:2px solid var(--mint);border-radius:99px;padding:8px 18px;font-weight:600;font-size:.92rem;transition:background .3s,color .3s,transform .3s}
+.chips span:hover{background:var(--mint);color:var(--gd);transform:translateY(-2px)}
+#brasil .btn{background:var(--g)}
+#brasil .btn:hover{background:var(--bg);color:var(--gd)}
+.contact a{color:var(--g);font-weight:600}
+@media (max-width:860px){#brasil::before,#brasil::after{width:64px}#brasil::before{left:64px;height:64px}#brasil::after{height:128px}}
 </style>
 </head>
 <body>
 
-<div class="bar"><div class="wrap"><span>Foz do Iguaçu/PR · contato@seudominio.com.br</span><span>Seg a Sex, 08h às 18h</span></div></div>
+<div class="bar"><div class="wrap"><span>Contabilidade digital · Atendimento em todo o Brasil · contabilidadecontatofoz2026@gmail.com</span><span>Seg a Sex, 08h às 18h</span></div></div>
 
 <header class="nav"><div class="wrap">
   <div class="logo">Sua Contabilidade<small>Assessoria Empresarial</small></div>
@@ -179,7 +197,7 @@ header.nav .wrap{height:72px;min-height:0}
     <a class="btn" href="#contato">Abrir minha empresa</a>
   </div></div>
   <div class="dots" id="dots"><button aria-label="Slide 1" class="on"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button></div>
-  <div class="strip"><div class="wrap"><span>Atendimento próximo</span><span>Visão estratégica</span><span>Segurança fiscal</span><span>Foco em resultados</span><span>Gestão organizada</span><span>Transparência</span></div></div>
+  <div class="strip"><div class="wrap"><span>Atendimento em todo o Brasil</span><span>Visão estratégica</span><span>Segurança fiscal</span><span>Foco em resultados</span><span>Gestão organizada</span><span>Transparência</span></div></div>
 </div>
 
 
@@ -187,11 +205,21 @@ header.nav .wrap{height:72px;min-height:0}
   <div>
     <p class="kicker">Quem somos</p>
     <h2>Contabilidade que vai além da burocracia</h2>
-    <p>Somos uma assessoria contábil e empresarial com atendimento próximo e linguagem simples. Cuidamos da contabilidade geral da sua empresa e da regularização de obras, com foco em segurança, economia e tranquilidade para você.</p>
+    <p>Somos uma contabilidade digital, com atendimento próximo, linguagem simples e clientes em todo o Brasil. Cuidamos da contabilidade geral da sua empresa e da regularização de obras, com foco em segurança, economia e tranquilidade para você.</p>
     <p>Também temos atendimento especializado para salões de beleza e clínicas médicas.</p>
     <a class="btn" href="#contato">Falar com um especialista</a>
   </div>
   <div class="person"><img src="foto.jpg" width="600" height="600" alt="Contador responsável" loading="lazy"><div class="badge">Atuando desde <b>[ANO]</b></div></div>
+</div></section>
+
+<section id="brasil"><div class="wrap">
+  <svg class="pin" viewBox="0 0 64 86" width="72" height="96" aria-hidden="true"><ellipse cx="32" cy="81" rx="22" ry="4" fill="rgba(255,255,255,.22)"/><path d="M32 0C14.3 0 0 14.1 0 31.5 0 54 32 78 32 78s32-24 32-46.5C64 14.1 49.7 0 32 0z" fill="#9be7bd"/><circle cx="32" cy="31" r="12" fill="#1f6b46"/></svg>
+  <p class="kicker">Onde fazemos isso?</p>
+  <h2>Contabilidade digital, com atendimento em todo o Brasil</h2>
+  <p>Nosso trabalho é 100% online. Isso significa que você é atendido de onde estiver, sem deslocamento e sem filas, com a mesma atenção de um escritório da sua cidade.</p>
+  <p>Conversamos por WhatsApp, e-mail e videochamada, e toda a documentação é enviada e acompanhada de forma digital.</p>
+  <div class="chips"><span>100% online</span><span>Todo o Brasil</span><span>WhatsApp, e-mail e videochamada</span></div>
+  <a class="btn wa" href="#contato" data-t="Olá! Moro fora de Foz do Iguaçu e quero saber como funciona o atendimento online.">Falar com a gente</a>
 </div></section>
 
 <section class="alt" id="servicos"><div class="wrap">
@@ -254,9 +282,10 @@ header.nav .wrap{height:72px;min-height:0}
 <section class="alt" id="faq"><div class="wrap">
   <div class="head"><p class="kicker">Dúvidas</p><h2>Perguntas frequentes</h2></div>
   <div class="faq">
+    <details><summary>Vocês atendem em todo o Brasil?</summary><p>Sim. Somos uma contabilidade digital: o atendimento é todo online, por WhatsApp, e-mail e videochamada, então atendemos clientes de qualquer cidade do país.</p></details>
     <details><summary>Preciso regularizar minha obra no INSS?</summary><p>Em geral, sim. Ao concluir uma construção, reforma ou ampliação, a obra precisa ser regularizada para você obter a documentação exigida, por exemplo, para averbar o imóvel. Analisamos o seu caso e dizemos exatamente o que é necessário.</p></details>
     <details><summary>Quanto tempo leva para abrir uma empresa?</summary><p>O prazo varia conforme a atividade e o município. Depois de entender o seu caso, informamos uma estimativa e acompanhamos todo o processo.</p></details>
-    <details><summary>Vocês atendem o meu tipo de negócio?</summary><p>Atendemos empresas de diferentes ramos e temos atendimento especializado para salões de beleza e clínicas médicas. Fale com a gente para confirmar.</p></details>
+    <details><summary>Vocês atendem o meu tipo de negócio?</summary><p>Atendemos empresas de diferentes ramos e temos atendimento especializado para salões de beleza e clínicas médicas. Fale com a gente e contamos como funciona para o seu caso.</p></details>
     <details><summary>Como funciona o atendimento?</summary><p>O contato é feito principalmente pelo WhatsApp, de forma rápida e direta. Se preferir, também atendemos por telefone e e-mail.</p></details>
   </div>
 </div></section>
@@ -266,7 +295,7 @@ header.nav .wrap{height:72px;min-height:0}
     <p class="kicker">Contato</p>
     <h2>Peça seu atendimento</h2>
     <p>Preencha o formulário e abriremos uma conversa no WhatsApp com a sua mensagem pronta.</p>
-    <p><b>WhatsApp:</b> (45) 99999-9999<br><b>E-mail:</b> contato@seudominio.com.br<br><b>Endereço:</b> Rua Exemplo, 000, Centro, Foz do Iguaçu/PR<br><b>Horário:</b> Seg a Sex, 08h às 18h</p>
+    <p><b>WhatsApp:</b> (45) 99999-9999<br><b>E-mail:</b> <a href="mailto:contabilidadecontatofoz2026@gmail.com">contabilidadecontatofoz2026@gmail.com</a><br><b>Atendimento:</b> 100% online, em todo o Brasil<br><b>Horário:</b> Seg a Sex, 08h às 18h</p>
   </div>
   <form id="f">
     <label>Nome<input name="nome" required autocomplete="name"></label>
@@ -277,7 +306,7 @@ header.nav .wrap{height:72px;min-height:0}
   </form>
 </div></section>
 
-<footer><div class="wrap"><span>© 2026 Sua Contabilidade · CRC 00000/PR</span><span>Todos os direitos reservados</span></div></footer>
+<footer><div class="wrap"><span>© 2026 Sua Contabilidade · Contabilidade digital · CRC 00000/UF</span><span>Todos os direitos reservados</span></div></footer>
 <a class="fab wa" href="#contato" data-t="Olá! Gostaria de mais informações.">WhatsApp</a>
 
 <script>
@@ -296,7 +325,7 @@ document.getElementById("f").addEventListener("submit",function(e){e.preventDefa
 window.open(wa("Olá! Meu nome é "+x.get("nome")+". Quero falar sobre: "+x.get("assunto")+". Telefone: "+x.get("tel")+"."),"_blank")});
 if(!matchMedia("(prefers-reduced-motion:reduce)").matches&&"IntersectionObserver" in window){
  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
- document.querySelectorAll(".card,.why>div,.steps li,.person,.about>div:first-child,.head,.contact>*,details").forEach(function(el,n){el.classList.add("rv");el.style.transitionDelay=(n%3)*90+"ms";io.observe(el)});
+ document.querySelectorAll(".card,.why>div,.steps li,.person,.about>div:first-child,.head,.contact>*,details,#brasil .wrap>*").forEach(function(el,n){el.classList.add("rv");el.style.transitionDelay=(n%3)*90+"ms";io.observe(el)});
 }
 </script>
 </body>
