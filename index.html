@@ -3,93 +3,107 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contabilidade estratégica, abertura de empresa e regularização de obras</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<title>Contabilidade, abertura de empresa e regularização de obra</title>
+<meta name="description" content="Contabilidade geral, abertura de empresa e regularização de obra (INSS/CNO). Atendimento especializado para salões de beleza e clínicas médicas.">
+<meta name="theme-color" content="#0c2f23">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0f2a4a;--navy2:#173b66;--gold:#c9a24a;--bg:#fff;--bg2:#f3f5f8;--ink:#1b2a3a;--muted:#5a6878;--line:#dde3ea;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1624;--bg2:#12233a;--ink:#e8eef6;--muted:#a2b2c4;--line:#243a57;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0c1624;--bg2:#12233a;--ink:#e8eef6;--muted:#a2b2c4;--line:#243a57;color-scheme:dark}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
+:root{--g900:#0c2f23;--g800:#134733;--g700:#1b6045;--btn:#1a6b48;--btn2:#14573a;--mint:#8fd3ae;--bg:#fff;--bg2:#eef4f0;--ink:#14231c;--muted:#4d6358;--line:#d3e0d8;--kick:#2a7a56;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1b14;--bg2:#10281d;--ink:#e6f1ea;--muted:#a3bbad;--line:#21402f;--kick:#8fd3ae;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1b14;--bg2:#10281d;--ink:#e6f1ea;--muted:#a3bbad;--line:#21402f;--kick:#8fd3ae;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Open Sans",system-ui,sans-serif}
-h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em}
 p{margin:0 0 1em;max-width:64ch}
 a{color:inherit}
 .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
-section{padding:76px 0}
-.kicker{font:600 .95rem Montserrat,sans-serif;color:var(--gold);margin:0 0 .4em}
-h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:700}
-.btn{display:inline-block;background:var(--gold);color:#1a1405;font:700 1rem Montserrat,sans-serif;padding:14px 28px;border-radius:4px;text-decoration:none;border:0;cursor:pointer}
-.btn:hover{filter:brightness(1.08)}
-.btn.line{background:none;color:#fff;border:2px solid #fff}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.bar{background:var(--navy2);color:#fff;font-size:.88rem}
+section{padding:80px 0}
+.kicker{font:600 .85rem Montserrat,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--kick);margin:0 0 .6em}
+h2{font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:700}
+.btn{display:inline-block;background:var(--btn);color:#fff;font:600 .98rem Montserrat,sans-serif;padding:14px 28px;border-radius:4px;text-decoration:none;border:1px solid rgba(255,255,255,.18);cursor:pointer;transition:background .25s,transform .25s}
+.btn:hover{background:var(--btn2);transform:translateY(-2px)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
+.bar{background:var(--g800);color:#fff;font-size:.86rem}
 .bar .wrap{display:flex;justify-content:space-between;gap:12px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
-header.nav{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20}
-header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
-.logo{font:800 1.3rem Montserrat,sans-serif}
+header.nav{background:var(--g900);color:#fff;position:sticky;top:0;z-index:20;transition:box-shadow .3s}
+header.nav.sc{box-shadow:0 4px 18px rgba(0,0,0,.35)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px;position:relative}
+.logo{font:700 1.35rem "Playfair Display",serif}
 .logo small{display:block;font:500 .7rem "Open Sans",sans-serif;opacity:.8}
-nav{display:flex;gap:22px;font-weight:600;font-size:.95rem}
+nav{display:flex;gap:24px;font:600 .92rem Montserrat,sans-serif}
 nav a{text-decoration:none}
-nav a:hover{color:var(--gold)}
-.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
-.slide{display:none;padding:96px 0 110px;background-color:var(--navy);background-image:linear-gradient(100deg,rgba(15,42,74,.96) 35%,rgba(15,42,74,.55) 100%),var(--img,none);background-size:cover;background-position:center right}
+nav a:hover{color:var(--mint)}
+.burger{display:none;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:4px;padding:8px 12px;font:600 .9rem Montserrat,sans-serif;cursor:pointer}
+.hero{position:relative;background:var(--g900);color:#fff;overflow:hidden}
+.slide{display:none;padding:96px 0 112px;background-color:var(--g900);background-image:linear-gradient(100deg,rgba(12,47,35,.96) 35%,rgba(12,47,35,.5) 100%),var(--img,none);background-size:cover;background-position:center right}
 .slide.on{display:block}
-.slide h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;max-width:19ch}
-.slide p{font-size:1.15rem;max-width:56ch;opacity:.92}
-.slide .btn{margin-top:14px}
+.slide.on .wrap{animation:in .8s ease both}
+@keyframes in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.slide .kicker{color:var(--mint)}
+.slide h1{font-size:clamp(2.1rem,5vw,3.5rem);font-weight:700;max-width:18ch}
+.slide p.lead{font-size:1.15rem;max-width:56ch;opacity:.93}
 .dots{position:absolute;left:0;right:0;bottom:22px;display:flex;gap:10px;justify-content:center}
 .dots button{width:34px;height:5px;border:0;border-radius:3px;background:rgba(255,255,255,.35);cursor:pointer;padding:0}
-.dots button.on{background:var(--gold)}
-.strip{background:var(--navy2);color:#fff}
-.strip .wrap{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding-top:18px;padding-bottom:18px;font:600 .88rem Montserrat,sans-serif;text-align:center}
-.about{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
-.badge{background:var(--navy);color:#fff;border-radius:8px;padding:36px;text-align:center}
-.badge b{display:block;font:800 3rem Montserrat,sans-serif;color:var(--gold)}
+.dots button.on{background:var(--mint)}
+.strip{background:var(--g800);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding-top:18px;padding-bottom:18px;font:600 .85rem Montserrat,sans-serif;text-align:center}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:center}
+.person img{width:100%;height:auto;border-radius:8px 8px 0 0;display:block;filter:grayscale(1) contrast(1.05)}
+.person .badge{background:var(--g900);color:#fff;border-radius:0 0 8px 8px;padding:16px;text-align:center;font:600 1rem Montserrat,sans-serif}
+.person .badge b{color:var(--mint);font-size:1.3rem}
 .alt{background:var(--bg2)}
-.head{text-align:center;margin-bottom:40px}
-.head p{margin:0 auto}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:var(--bg);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
-
-
-.card div.body{padding:20px;flex:1;display:flex;flex-direction:column}
-.card p{font-size:.97rem;color:var(--muted)}
-.card a{margin-top:auto;font-weight:700;color:var(--navy2);text-decoration:none}
-:root[data-theme="dark"] .card a{color:var(--gold)}
-@media (prefers-color-scheme:dark){.card a{color:var(--gold)}}
+.head{text-align:center;margin-bottom:44px}
+.head p{margin:0 auto;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(12,47,35,.22)}
+.card .img{position:relative;overflow:hidden;isolation:isolate;height:210px;background:linear-gradient(135deg,var(--g900),var(--g700));display:flex;align-items:flex-end;justify-content:space-between;gap:10px;padding:18px;color:#fff;font:700 1.3rem "Playfair Display",serif}
+.card .img::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--img,none) center/cover;transition:transform .6s ease}
+.card .img::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(12,47,35,.9),rgba(12,47,35,.15) 75%);transition:opacity .4s}
+.card:hover .img::before{transform:scale(1.1)}
+.card:hover .img::after{opacity:.6}
+.tag{font:600 .72rem Montserrat,sans-serif;letter-spacing:.08em;text-transform:uppercase;background:var(--mint);color:var(--g900);padding:4px 10px;border-radius:99px;white-space:nowrap}
+.card .body{padding:22px;flex:1;display:flex;flex-direction:column;gap:6px}
+.card p{font-size:.97rem;color:var(--muted);margin:0}
+.card ul{margin:6px 0 14px;padding-left:1.1em;font-size:.95rem;color:var(--muted)}
+.card .btn{margin-top:auto;align-self:flex-start}
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:s}
+.steps li{counter-increment:s;border-top:3px solid var(--btn);padding-top:14px}
+.steps li::before{content:"0" counter(s);font:700 2rem "Playfair Display",serif;color:var(--kick)}
+.steps p{color:var(--muted)}
 .why{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.why div{border-top:3px solid var(--gold);padding-top:14px}
-.why b{font:800 1.5rem Montserrat,sans-serif;color:var(--gold)}
-.why h3{font-size:1.1rem;margin:.2em 0}
+.why div{border-top:3px solid var(--btn);padding-top:14px}
+.why b{font:700 1.6rem "Playfair Display",serif;color:var(--kick)}
+.why h3{font-size:1.15rem;margin:.2em 0}
 .why p{font-size:.96rem;color:var(--muted)}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.faq{max-width:780px;margin:0 auto}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font:700 1.15rem "Playfair Display",serif;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--kick)}
+details[open] summary::after{content:"–"}
+details p{margin:.8em 0 0;color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px}
 form{display:grid;gap:14px}
 label{display:grid;gap:6px;font-weight:600;font-size:.95rem}
 input,select{font:inherit;padding:12px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);width:100%}
-footer{background:var(--navy);color:#fff;padding:28px 0;font-size:.9rem}
+.note{font-size:.82rem;color:var(--muted);margin:0}
+footer{background:var(--g900);color:#fff;padding:30px 0;font-size:.9rem}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:#25d366;color:#08331a;font:700 .95rem Montserrat,sans-serif;padding:13px 18px;border-radius:99px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3)}
-@media (max-width:860px){nav{display:none}.strip .wrap{grid-template-columns:repeat(2,1fr)}.about,.contact,.cards,.why{grid-template-columns:1fr}section{padding:54px 0}.slide{padding:64px 0 90px}}
-.person img{width:100%;height:auto;border-radius:8px 8px 0 0;display:block}.person .badge{border-radius:0 0 8px 8px;padding:16px;font:600 1rem Montserrat,sans-serif}.person .badge b{display:inline;font-size:1.3rem}
-@media (max-width:860px){.person{max-width:420px}}
-.card{transition:transform .3s,box-shadow .3s}
-.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(15,42,74,.22)}
-.card.hl{border-top:4px solid var(--gold)}
-.card .img{position:relative;overflow:hidden;isolation:isolate;height:190px;background:linear-gradient(135deg,var(--navy),var(--navy2));display:flex;align-items:flex-end;padding:18px;color:#fff;font:700 1.15rem Montserrat,sans-serif}
-.card.hl .img{background:linear-gradient(135deg,#7a5c16,#b8923a)}
-.card .img::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--img,none) center/cover;transition:transform .6s ease}
-.card .img::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(15,42,74,.88),rgba(15,42,74,.15) 70%);transition:opacity .4s}
-.card:hover .img::before{transform:scale(1.1)}
-.card:hover .img::after{opacity:.6}
-.card:hover a{text-decoration:underline}
-.person img{filter:grayscale(1) contrast(1.05)}
-header.nav{transition:box-shadow .3s}
-header.nav.sc{box-shadow:0 4px 18px rgba(0,0,0,.35)}
-.slide.on .wrap{animation:in .8s ease both}
-@keyframes in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
+@media (max-width:860px){
+ .burger{display:block}
+ nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--g900);flex-direction:column;gap:0;padding:8px 20px 16px}
+ nav.open{display:flex}nav a{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+ .strip .wrap{grid-template-columns:repeat(2,1fr)}
+ .about,.contact,.cards,.why,.steps{grid-template-columns:1fr}
+ .person{max-width:420px}section{padding:56px 0}.slide{padding:64px 0 92px}
+}
+@media (max-width:560px){header.nav .btn{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -99,40 +113,41 @@ header.nav.sc{box-shadow:0 4px 18px rgba(0,0,0,.35)}
 
 <header class="nav"><div class="wrap">
   <div class="logo">Sua Contabilidade<small>Assessoria Empresarial</small></div>
-  <nav><a href="#sobre">Quem somos</a><a href="#servicos">Serviços</a><a href="#diferenciais">Diferenciais</a><a href="#contato">Contato</a></nav>
+  <nav id="menu"><a href="#sobre">Quem somos</a><a href="#servicos">Serviços</a><a href="#segmentos">Especialidades</a><a href="#faq">Dúvidas</a><a href="#contato">Contato</a></nav>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">Menu</button>
   <a class="btn" href="#contato">Fale conosco</a>
 </div></header>
 
-<div class="hero" id="hero">
+<div class="hero">
   <div class="slide on" style="--img:url(hero-1.jpg)"><div class="wrap">
     <p class="kicker">Contabilidade geral</p>
     <h1>Contabilidade estratégica para o crescimento do seu negócio.</h1>
-    <p>Reduza impostos dentro da lei, organize a gestão e tenha segurança fiscal, deixando a burocracia com a gente.</p>
-    <a class="btn" href="#contato">Saiba mais</a>
+    <p class="lead">Reduza impostos dentro da lei, organize a gestão e tenha segurança fiscal, deixando a burocracia com a gente.</p>
+    <a class="btn" href="#contato">Falar com um especialista</a>
   </div></div>
   <div class="slide" style="--img:url(hero-2.jpg)"><div class="wrap">
     <p class="kicker">Regularização de obra</p>
     <h1>Sua obra legalizada, sem burocracia e sem multas.</h1>
-    <p>Regularizamos INSS e CNO de novas construções, reformas e ampliações, em conformidade com os órgãos.</p>
-    <a class="btn" href="#contato">Saiba mais</a>
+    <p class="lead">Regularizamos o INSS e o CNO de construções, reformas e ampliações, em conformidade com os órgãos.</p>
+    <a class="btn" href="#contato">Regularizar minha obra</a>
   </div></div>
   <div class="slide" style="--img:url(hero-3.jpg)"><div class="wrap">
     <p class="kicker">Abertura de empresa</p>
     <h1>Comece certo: abra seu CNPJ com orientação de quem entende.</h1>
-    <p>Escolhemos o regime tributário ideal e cuidamos de contrato social, alvarás e registros.</p>
-    <a class="btn" href="#contato">Saiba mais</a>
+    <p class="lead">Escolhemos o regime tributário ideal e cuidamos de contrato social, alvarás e registros.</p>
+    <a class="btn" href="#contato">Abrir minha empresa</a>
   </div></div>
   <div class="dots" id="dots"><button aria-label="Slide 1" class="on"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button></div>
 </div>
 
-<div class="strip"><div class="wrap"><span>Experiência comprovada</span><span>Visão estratégica</span><span>Tecnologia integrada</span><span>Foco em resultados</span><span>Gestão otimizada</span><span>Segurança fiscal</span></div></div>
+<div class="strip"><div class="wrap"><span>Atendimento próximo</span><span>Visão estratégica</span><span>Segurança fiscal</span><span>Foco em resultados</span><span>Gestão organizada</span><span>Transparência</span></div></div>
 
 <section id="sobre"><div class="wrap about">
   <div>
     <p class="kicker">Quem somos</p>
     <h2>Contabilidade que vai além da burocracia</h2>
     <p>Somos uma assessoria contábil e empresarial com atendimento próximo e linguagem simples. Cuidamos da contabilidade geral da sua empresa e da regularização de obras, com foco em segurança, economia e tranquilidade para você.</p>
-    <p>Atendimento especializado para salões de beleza e clínicas médicas.</p>
+    <p>Também temos atendimento especializado para salões de beleza e clínicas médicas.</p>
     <a class="btn" href="#contato">Falar com um especialista</a>
   </div>
   <div class="person"><img src="foto.jpg" width="600" height="600" alt="Contador responsável" loading="lazy"><div class="badge">Atuando desde <b>[ANO]</b></div></div>
@@ -141,29 +156,71 @@ header.nav.sc{box-shadow:0 4px 18px rgba(0,0,0,.35)}
 <section class="alt" id="servicos"><div class="wrap">
   <div class="head"><p class="kicker">Serviços</p><h2>Como podemos te ajudar?</h2><p>Soluções para cada etapa da sua empresa ou da sua obra.</p></div>
   <div class="cards">
-    <div class="card hl"><div class="img" style="--img:url(card-abertura.jpg)">Abertura de empresa</div><div class="body"><p>Regime tributário, contrato social, CNPJ, alvarás e inscrições.</p><a href="#contato">Quero abrir minha empresa</a></div></div>
-    <div class="card hl"><div class="img" style="--img:url(card-obra.jpg)">Regularização de obra (INSS/CNO)</div><div class="body"><p>Matrícula CNO, cálculo e documentação para regularizar a obra.</p><a href="#contato">Quero regularizar minha obra</a></div></div>
-    <div class="card"><div class="img" style="--img:url(card-contabilidade.jpg)">Contabilidade geral</div><div class="body"><p>Escrituração, balanços, obrigações mensais e apuração de impostos.</p><a href="#contato">Saiba mais</a></div></div>
-    <div class="card hl"><div class="img" style="--img:url(card-salao.jpg)">Salões de beleza</div><div class="body"><p>Atendimento especializado, com contratação e tributação do jeito certo.</p><a href="#contato">Saiba mais</a></div></div>
-    <div class="card hl"><div class="img" style="--img:url(card-clinica.jpg)">Clínicas médicas</div><div class="body"><p>Planejamento tributário e organização fiscal para clínicas e consultórios.</p><a href="#contato">Saiba mais</a></div></div>
-    <div class="card"><div class="img" style="--img:url(card-pessoal.jpg)">Departamento pessoal</div><div class="body"><p>Admissões, folha, férias, encargos e eSocial.</p><a href="#contato">Saiba mais</a></div></div>
+    <div class="card"><div class="img" style="--img:url(card-abertura.jpg)">Abertura de empresa<span class="tag">Destaque</span></div><div class="body">
+      <p>Do planejamento ao CNPJ ativo, com a empresa já no regime tributário mais vantajoso.</p>
+      <ul><li>Escolha do tipo de empresa e do regime</li><li>Contrato social, CNPJ e inscrições</li><li>Alvarás e licenças</li></ul>
+      <a class="btn wa" href="#contato" data-t="Olá! Quero abrir minha empresa.">Quero abrir minha empresa</a></div></div>
+    <div class="card"><div class="img" style="--img:url(card-obra.jpg)">Regularização de obra<span class="tag">Destaque</span></div><div class="body">
+      <p>Regularização da obra junto ao INSS, para você ter a documentação em dia.</p>
+      <ul><li>Matrícula CNO</li><li>Aferição da obra e cálculo das contribuições</li><li>Certidão de regularização</li></ul>
+      <a class="btn wa" href="#contato" data-t="Olá! Quero regularizar minha obra (INSS).">Quero regularizar minha obra</a></div></div>
+    <div class="card"><div class="img" style="--img:url(card-contabilidade.jpg)">Contabilidade geral</div><div class="body">
+      <p>Rotina contábil completa, com impostos e obrigações em dia e relatórios que ajudam a decidir.</p>
+      <ul><li>Escrituração e balanços</li><li>Apuração de impostos e notas</li><li>Planejamento tributário</li></ul>
+      <a class="btn wa" href="#contato" data-t="Olá! Quero saber mais sobre contabilidade geral.">Saiba mais</a></div></div>
+    <div class="card"><div class="img" style="--img:url(card-pessoal.jpg)">Departamento pessoal</div><div class="body">
+      <p>Rotina de funcionários sem dor de cabeça, do registro ao eSocial.</p>
+      <ul><li>Admissões e rescisões</li><li>Folha, férias e encargos</li><li>Obrigações do eSocial</li></ul>
+      <a class="btn wa" href="#contato" data-t="Olá! Quero saber mais sobre departamento pessoal.">Saiba mais</a></div></div>
   </div>
-  <p style="text-align:center;margin:32px auto 0">Precisando de algum desses serviços? <a href="https://wa.me/5545999999999" style="font-weight:700">Fale com nossos especialistas</a></p>
+</div></section>
+
+<section id="segmentos"><div class="wrap">
+  <div class="head"><p class="kicker">Especialidades</p><h2>Atendimento especializado para o seu ramo</h2><p>Cada área tem regras e rotinas próprias. Em dois segmentos, o atendimento é feito por quem conhece o dia a dia.</p></div>
+  <div class="cards">
+    <div class="card"><div class="img" style="--img:url(card-salao.jpg)">Salões de beleza</div><div class="body">
+      <p>Contabilidade pensada para salões, barbearias e profissionais parceiros.</p>
+      <ul><li>Contratos de parceria com os profissionais</li><li>Enquadramento tributário adequado</li><li>Controle de comissões e repasses</li></ul>
+      <a class="btn wa" href="#contato" data-t="Olá! Tenho um salão de beleza e quero falar sobre contabilidade.">Falar sobre meu salão</a></div></div>
+    <div class="card"><div class="img" style="--img:url(card-clinica.jpg)">Clínicas médicas</div><div class="body">
+      <p>Organização fiscal e planejamento tributário para clínicas e consultórios.</p>
+      <ul><li>Escolha do regime tributário da clínica</li><li>Pró-labore e distribuição de lucros dos sócios</li><li>Notas, impostos e obrigações em dia</li></ul>
+      <a class="btn wa" href="#contato" data-t="Olá! Tenho uma clínica médica e quero falar sobre contabilidade.">Falar sobre minha clínica</a></div></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <div class="head"><p class="kicker">Como funciona</p><h2>Simples do primeiro contato ao resultado</h2></div>
+  <ol class="steps">
+    <li><h3>Você fala com a gente</h3><p>Conte sua necessidade pelo formulário ou pelo WhatsApp.</p></li>
+    <li><h3>Analisamos o seu caso</h3><p>Explicamos o que é preciso e combinamos valores e prazos.</p></li>
+    <li><h3>Cuidamos de tudo</h3><p>Você acompanha o andamento e nós resolvemos a burocracia.</p></li>
+  </ol>
 </div></section>
 
 <section id="diferenciais"><div class="wrap">
   <div class="head"><h2>Por que somos diferentes?</h2></div>
   <div class="why">
-    <div><b>01</b><h3>Experiência real</h3><p>Conhecemos o cenário local e as necessidades das empresas da região.</p></div>
-    <div><b>02</b><h3>Atendimento personalizado</h3><p>Orientação estratégica e análise do seu negócio, não só números.</p></div>
-    <div><b>03</b><h3>Tudo em um só lugar</h3><p>Do societário ao fiscal, do pessoal à regularização de obras.</p></div>
-    <div><b>04</b><h3>Conformidade em primeiro lugar</h3><p>Acompanhamos prazos e mudanças na lei para evitar multas e riscos.</p></div>
-    <div><b>05</b><h3>Transparência</h3><p>Comunicação contínua e informações claras e organizadas.</p></div>
+    <div><b>01</b><h3>Atendimento personalizado</h3><p>Orientação estratégica e análise do seu negócio, não só números.</p></div>
+    <div><b>02</b><h3>Tudo em um só lugar</h3><p>Do societário ao fiscal, do pessoal à regularização de obras.</p></div>
+    <div><b>03</b><h3>Conformidade em primeiro lugar</h3><p>Acompanhamos prazos e mudanças na lei para evitar multas e riscos.</p></div>
+    <div><b>04</b><h3>Transparência</h3><p>Comunicação contínua e informações claras e organizadas.</p></div>
+    <div><b>05</b><h3>Linguagem simples</h3><p>Explicamos cada passo sem juridiquês e sem enrolação.</p></div>
     <div><b>06</b><h3>Equipe atualizada</h3><p>Profissionais capacitados e comprometidos com o seu resultado.</p></div>
   </div>
 </div></section>
 
-<section class="alt" id="contato"><div class="wrap contact">
+<section class="alt" id="faq"><div class="wrap">
+  <div class="head"><p class="kicker">Dúvidas</p><h2>Perguntas frequentes</h2></div>
+  <div class="faq">
+    <details><summary>Preciso regularizar minha obra no INSS?</summary><p>Em geral, sim. Ao concluir uma construção, reforma ou ampliação, a obra precisa ser regularizada para você obter a documentação exigida, por exemplo, para averbar o imóvel. Analisamos o seu caso e dizemos exatamente o que é necessário.</p></details>
+    <details><summary>Quanto tempo leva para abrir uma empresa?</summary><p>O prazo varia conforme a atividade e o município. Depois de entender o seu caso, informamos uma estimativa e acompanhamos todo o processo.</p></details>
+    <details><summary>Vocês atendem o meu tipo de negócio?</summary><p>Atendemos empresas de diferentes ramos e temos atendimento especializado para salões de beleza e clínicas médicas. Fale com a gente para confirmar.</p></details>
+    <details><summary>Como funciona o atendimento?</summary><p>O contato é feito principalmente pelo WhatsApp, de forma rápida e direta. Se preferir, também atendemos por telefone e e-mail.</p></details>
+  </div>
+</div></section>
+
+<section id="contato"><div class="wrap contact">
   <div>
     <p class="kicker">Contato</p>
     <h2>Peça seu atendimento</h2>
@@ -173,27 +230,32 @@ header.nav.sc{box-shadow:0 4px 18px rgba(0,0,0,.35)}
   <form id="f">
     <label>Nome<input name="nome" required autocomplete="name"></label>
     <label>Telefone<input name="tel" type="tel" required autocomplete="tel"></label>
-    <label>Assunto<select name="assunto"><option>Abertura de empresa</option><option>Regularização de obra (INSS)</option><option>Contabilidade geral</option><option>Salão de beleza</option><option>Clínica médica</option></select></label>
+    <label>Assunto<select name="assunto"><option>Abertura de empresa</option><option>Regularização de obra (INSS)</option><option>Contabilidade geral</option><option>Departamento pessoal</option><option>Salão de beleza</option><option>Clínica médica</option></select></label>
     <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+    <p class="note">Usamos seus dados apenas para responder ao seu contato.</p>
   </form>
 </div></section>
 
 <footer><div class="wrap"><span>© 2026 Sua Contabilidade · CRC 00000/PR</span><span>Todos os direitos reservados</span></div></footer>
-<a class="fab" href="https://wa.me/5545999999999">WhatsApp</a>
+<a class="fab wa" href="#contato" data-t="Olá! Gostaria de mais informações.">WhatsApp</a>
 
 <script>
 var WHATS="5545999999999";
+function wa(t){return "https://wa.me/"+WHATS+"?text="+encodeURIComponent(t)}
+document.querySelectorAll("a.wa").forEach(function(a){a.href=wa(a.dataset.t);a.target="_blank";a.rel="noopener"});
 var s=document.querySelectorAll(".slide"),d=document.querySelectorAll("#dots button"),i=0,t;
 function go(n){s[i].classList.remove("on");d[i].classList.remove("on");i=n;s[i].classList.add("on");d[i].classList.add("on")}
-function play(){if(!matchMedia("(prefers-reduced-motion:reduce)").matches)t=setInterval(function(){go((i+1)%s.length)},4000)}
-d.forEach(function(b,n){b.onclick=function(){clearInterval(t);go(n)}});play();
-document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();var x=new FormData(e.target);
-window.open("https://wa.me/"+WHATS+"?text="+encodeURIComponent("Olá! Meu nome é "+x.get("nome")+". Quero falar sobre: "+x.get("assunto")+". Telefone: "+x.get("tel")+"."),"_blank")});
-
+if(!matchMedia("(prefers-reduced-motion:reduce)").matches)t=setInterval(function(){go((i+1)%s.length)},4000);
+d.forEach(function(b,n){b.onclick=function(){clearInterval(t);go(n)}});
+var m=document.getElementById("menu"),bg=document.getElementById("burger");
+bg.onclick=function(){var o=m.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+m.querySelectorAll("a").forEach(function(a){a.onclick=function(){m.classList.remove("open")}});
 window.addEventListener("scroll",function(){document.querySelector("header.nav").classList.toggle("sc",scrollY>20)},{passive:true});
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();var x=new FormData(e.target);
+window.open(wa("Olá! Meu nome é "+x.get("nome")+". Quero falar sobre: "+x.get("assunto")+". Telefone: "+x.get("tel")+"."),"_blank")});
 if(!matchMedia("(prefers-reduced-motion:reduce)").matches&&"IntersectionObserver" in window){
- var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15});
- document.querySelectorAll(".card,.why>div,.person,.about>div:first-child,.head,.contact>*").forEach(function(el,n){el.classList.add("rv");el.style.transitionDelay=(n%3)*90+"ms";io.observe(el)});
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+ document.querySelectorAll(".card,.why>div,.steps li,.person,.about>div:first-child,.head,.contact>*,details").forEach(function(el,n){el.classList.add("rv");el.style.transitionDelay=(n%3)*90+"ms";io.observe(el)});
 }
 </script>
 </body>
