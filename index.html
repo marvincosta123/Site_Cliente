@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Contabilidade, abertura de empresa e regularização de obra</title>
 <meta name="description" content="Contabilidade geral, abertura de empresa e regularização de obra (INSS/CNO). Atendimento especializado para salões de beleza e clínicas médicas.">
-<meta name="theme-color" content="#0c2f23">
+<meta name="theme-color" content="#14532d">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--g900:#0c2f23;--g800:#134733;--g700:#1b6045;--btn:#1a6b48;--btn2:#14573a;--mint:#8fd3ae;--bg:#fff;--bg2:#eef4f0;--ink:#14231c;--muted:#4d6358;--line:#d3e0d8;--kick:#2a7a56;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1b14;--bg2:#10281d;--ink:#e6f1ea;--muted:#a3bbad;--line:#21402f;--kick:#8fd3ae;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0b1b14;--bg2:#10281d;--ink:#e6f1ea;--muted:#a3bbad;--line:#21402f;--kick:#8fd3ae;color-scheme:dark}
+:root{--g900:#0f3d24;--g800:#14532d;--g700:#166534;--btn:#166534;--btn2:#0f3d24;--mint:#86efac;--bg:#fff;--bg2:#eef7f0;--ink:#10261a;--muted:#4a6454;--line:#cfe3d5;--kick:#15803d;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c2016;--bg2:#123022;--ink:#e6f1ea;--muted:#a3bbad;--line:#234a33;--kick:#86efac;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c2016;--bg2:#123022;--ink:#e6f1ea;--muted:#a3bbad;--line:#234a33;--kick:#86efac;color-scheme:dark}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Open Sans",system-ui,sans-serif}
@@ -24,10 +24,11 @@ section{padding:80px 0}
 h2{font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:700}
 .btn{display:inline-block;background:var(--btn);color:#fff;font:600 .98rem Montserrat,sans-serif;padding:14px 28px;border-radius:4px;text-decoration:none;border:1px solid rgba(255,255,255,.18);cursor:pointer;transition:background .25s,transform .25s}
 .btn:hover{background:var(--btn2);transform:translateY(-2px)}
+.hero .btn{border:2px solid var(--mint)}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
-.bar{background:var(--g800);color:#fff;font-size:.86rem}
+.bar{background:var(--g900);color:#fff;font-size:.86rem}
 .bar .wrap{display:flex;justify-content:space-between;gap:12px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
-header.nav{background:var(--g900);color:#fff;position:sticky;top:0;z-index:20;transition:box-shadow .3s}
+header.nav{background:var(--g800);color:#fff;position:sticky;top:0;z-index:20;transition:box-shadow .3s}
 header.nav.sc{box-shadow:0 4px 18px rgba(0,0,0,.35)}
 header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px;position:relative}
 .logo{font:700 1.35rem "Playfair Display",serif}
@@ -37,7 +38,7 @@ nav a{text-decoration:none}
 nav a:hover{color:var(--mint)}
 .burger{display:none;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:4px;padding:8px 12px;font:600 .9rem Montserrat,sans-serif;cursor:pointer}
 .hero{position:relative;background:var(--g900);color:#fff;overflow:hidden}
-.slide{display:none;padding:96px 0 112px;background-color:var(--g900);background-image:linear-gradient(100deg,rgba(12,47,35,.96) 35%,rgba(12,47,35,.5) 100%),var(--img,none);background-size:cover;background-position:center right}
+.slide{display:none;padding:96px 0 112px;background-color:var(--g900);background-image:linear-gradient(100deg,rgba(15,61,36,.96) 35%,rgba(15,61,36,.5) 100%),var(--img,none);background-size:cover;background-position:center right}
 .slide.on{display:block}
 .slide.on .wrap{animation:in .8s ease both}
 @keyframes in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
@@ -47,7 +48,7 @@ nav a:hover{color:var(--mint)}
 .dots{position:absolute;left:0;right:0;bottom:22px;display:flex;gap:10px;justify-content:center}
 .dots button{width:34px;height:5px;border:0;border-radius:3px;background:rgba(255,255,255,.35);cursor:pointer;padding:0}
 .dots button.on{background:var(--mint)}
-.strip{background:var(--g800);color:#fff}
+.strip{background:var(--g700);color:#fff}
 .strip .wrap{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding-top:18px;padding-bottom:18px;font:600 .85rem Montserrat,sans-serif;text-align:center}
 .about{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:center}
 .person img{width:100%;height:auto;border-radius:8px 8px 0 0;display:block;filter:grayscale(1) contrast(1.05)}
@@ -58,10 +59,10 @@ nav a:hover{color:var(--mint)}
 .head p{margin:0 auto;color:var(--muted)}
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
 .card{background:var(--bg);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
-.card:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(12,47,35,.22)}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(15,61,36,.22)}
 .card .img{position:relative;overflow:hidden;isolation:isolate;height:210px;background:linear-gradient(135deg,var(--g900),var(--g700));display:flex;align-items:flex-end;justify-content:space-between;gap:10px;padding:18px;color:#fff;font:700 1.3rem "Playfair Display",serif}
 .card .img::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--img,none) center/cover;transition:transform .6s ease}
-.card .img::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(12,47,35,.9),rgba(12,47,35,.15) 75%);transition:opacity .4s}
+.card .img::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(15,61,36,.9),rgba(15,61,36,.15) 75%);transition:opacity .4s}
 .card:hover .img::before{transform:scale(1.1)}
 .card:hover .img::after{opacity:.6}
 .tag{font:600 .72rem Montserrat,sans-serif;letter-spacing:.08em;text-transform:uppercase;background:var(--mint);color:var(--g900);padding:4px 10px;border-radius:99px;white-space:nowrap}
@@ -97,7 +98,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .rv.in{opacity:1;transform:none}
 @media (max-width:860px){
  .burger{display:block}
- nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--g900);flex-direction:column;gap:0;padding:8px 20px 16px}
+ nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--g800);flex-direction:column;gap:0;padding:8px 20px 16px}
  nav.open{display:flex}nav a{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12)}
  .strip .wrap{grid-template-columns:repeat(2,1fr)}
  .about,.contact,.cards,.why,.steps{grid-template-columns:1fr}
